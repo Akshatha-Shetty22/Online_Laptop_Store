@@ -1,0 +1,91 @@
+﻿@model IEnumerable<DataAccessLayer_DAL.Models.Laptop>;
+@{
+    ViewData["Title"] = "ManageProducts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    img {
+        margin-bottom: 15px;
+        transition: 0.3s ease-in-out;
+    }
+
+
+        img:hover {
+            transition: 0.3s ease-in-out;
+            transform: scale(1.1);
+        }
+
+    .carousel-inner img {
+        margin: auto;
+    }
+</style>
+
+<!--<h4>@ViewBag.usr</h4>-->
+<style>
+    .img-fluid {
+        max-width: 78%;
+        height: 181px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Hello Admin!</h2>
+            <br />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a class="btn btn-light btn-outline-dark btn-block" asp-controller="Admin" asp-action="AddProduct">+ Add New Product</a>
+            </div>
+            <br />
+            <br /><br /><br /><br />
+        </div>
+    </div>
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <img class="img-fluid" src=@item.Image height="400" width="320" />
+        </div>
+        <div class="col-md-8">
+            <h3>@item.ItemTitle</h3>
+            
+            <h4>
+                <!--<span class="badge badge-pill badge-success">  @item.Price</span>-->
+                Price: <span class="text-danger">₹ @item.Price</span>
+
+            </h4>
+            <!-- @{ Random r = new Random();
+                                 int num = r.Next(5);
+                                 DayOfWeek wk = DateTime.Today.AddDays(num).DayOfWeek; }-->
+            <br>
+            <div class="row">
+                <!-- <div class="col-md-4">
+                      <h4>Get it by @wk</h4>
+
+                  </div>-->
+                <div class="col-md-4">
+                   <!-- <a class="btn btn-primary btn-block" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id">Details</a>-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-info btn-block" asp-controller="Admin" asp-action="EditProduct" asp-route-id="@item.Id">Edit</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-danger btn-block" asp-controller="Admin" asp-action="DeleteProduct" asp-route-id="@item.Id">Delete</a>
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+
+            </div>
+
+            <hr style="height:3px" />
+        </div>}
+</div>
+

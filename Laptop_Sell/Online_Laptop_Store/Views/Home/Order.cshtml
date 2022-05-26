@@ -1,0 +1,59 @@
+﻿@model Online_Laptop_Store.ViewModels.OrderViewModel;
+@{
+    ViewData["Title"] = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        
+        @if (Model?.LaptopToOrder.Id >= 0)
+        {
+            
+        <div class="col-md-4">
+            <h4>Enter Shipping Details</h4>
+            <form asp-action="Order">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="@Model.CustomerDetails.Address" class="control-label"></label>
+                    <textarea rows="5" asp-for="@Model.CustomerDetails.Address" class="form-control" ></textarea>
+                    <span asp-validation-for="@Model.CustomerDetails.Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.CustomerDetails.PhoneNumber" class="control-label"></label>
+                    <input asp-for="@Model.CustomerDetails.PhoneNumber" class="form-control" />
+                    <span asp-validation-for="@Model.CustomerDetails.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Order" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-primary">You have selected the following Laptop</h4>
+                <img src="@Model.LaptopToOrder.Image" alt="@Model.LaptopToOrder.ItemTitle" height="300" width="400" />
+                <h5 class="text-dark">@Model.LaptopToOrder.ItemTitle</h5>
+                <h5 class="text-danger">Price: ₹ @Model.LaptopToOrder.Price</h5>
+
+
+            </div>
+        }
+        else
+        {
+            <div class="col-md-8">
+                <p>You haven't selected any book.Please select a book to purchase before proceeding</p>
+                <a href="/">Click to go back to book list.</a>
+            </div>
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+

@@ -1,0 +1,90 @@
+﻿@model DataAccessLayer_DAL.Models.Laptop;
+
+@{
+    ViewData["Title"] = "EditProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Update Product</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="EditProduct">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <!--<div class="form-group">
+                        <label asp-for="Id" class="control-label"></label>
+                        <input asp-for="Id" class="form-control" />
+                        <span asp-validation-for="Id" class="text-danger"></span>
+                    </div>-->
+                    <div class="form-group">
+                        <label asp-for="ItemTitle" class="control-label"></label>
+                        <input asp-for="ItemTitle" class="form-control" />
+                        <span asp-validation-for="ItemTitle" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Image" class="control-label"></label>
+                        <input asp-for="Image" class="form-control" />
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Brand" class="control-label"></label>
+                        <input asp-for="Brand" class="form-control" />
+                        <span asp-validation-for="Brand" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Series" class="control-label"></label>
+                        <input asp-for="Series" class="form-control" />
+                        <span asp-validation-for="Series" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="ScreenSize" class="control-label"></label>
+                        <input asp-for="ScreenSize" class="form-control" />
+                        <span asp-validation-for="ScreenSize" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Color" class="control-label"></label>
+                        <input asp-for="Color" class="form-control" />
+                        <span asp-validation-for="Color" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ram" class="control-label"></label>
+                        <input asp-for="Ram" class="form-control" />
+                        <span asp-validation-for="Ram" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CPUSpeed" class="control-label"></label>
+                        <input asp-for="CPUSpeed" class="form-control" />
+                        <span asp-validation-for="CPUSpeed" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="HardDisk" class="control-label"></label>
+                        <input asp-for="HardDisk" class="form-control" />
+                        <span asp-validation-for="HardDisk" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ManageProducts">Back to List</a>
+</div>
+

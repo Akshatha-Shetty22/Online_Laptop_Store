@@ -1,0 +1,101 @@
+﻿@model IEnumerable<DataAccessLayer_DAL.Models.Laptop>
+@{
+    ViewData["Title"] = "MyOrdersList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int cnt = int.Parse(ViewBag.cnt.ToString());
+    DateTime nw = DateTime.Now;
+    Random ran = new Random();
+}
+
+<style>
+    .card {
+        height: 60vh;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .center img {
+        text-decoration: none;
+        color: inherit;
+        border: none;
+        outline: none;
+        height: 162px;
+        width: 250px;
+        margin: 20px 0px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .order-data {
+        vertical-align: middle;
+        align-items: center;
+        align-self: center;
+    }
+
+    .card-table {
+        margin-top: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-clip: border-box;
+        border: 1px solid black;
+        border-radius: .25rem;
+    }
+</style>
+
+@if (cnt == 0)
+{
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Orders</h5>
+
+        </div>
+        <div class="center">
+            <img src="https://i.pinimg.com/736x/8a/e5/2c/8ae52c3304f4ab335e3b8398ec15ae63.jpg" alt="sompic">
+            <h4>No active orders</h4>
+            <a asp-action="Index">Shop now</a>
+        </div>
+    </div> }
+
+else
+{
+    foreach (var item in Model)
+    {
+
+
+        <div class="card" style="height: 16rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src=@item.Image sstyle="width:100%;height:auto;">
+                    </div>
+                    <div class="col-md-9">
+                        <h5 class="card-header">@item.ItemTitle</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Price:<span class="text-primary">₹ @item.Price</span></h5>
+
+                            <p class="card-text"><span style="color:green;">Arriving by @nw.AddDays(ran.Next(5)).DayOfWeek</span></p>
+                            <a class="btn btn-primary" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        }
+
+}
+

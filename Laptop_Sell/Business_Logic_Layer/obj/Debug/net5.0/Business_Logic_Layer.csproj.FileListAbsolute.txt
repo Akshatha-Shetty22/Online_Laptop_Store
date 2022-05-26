@@ -1,0 +1,16 @@
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\Business_Logic_Layer.deps.json
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\Business_Logic_Layer.dll
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\ref\Business_Logic_Layer.dll
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\Business_Logic_Layer.pdb
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\DataAccessLayer_DAL.dll
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\DataAccessLayer_DAL.pdb
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\bin\Debug\net5.0\DataAccessLayer_DAL.dll.config
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.csproj.AssemblyReference.cache
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.AssemblyInfoInputs.cache
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.AssemblyInfo.cs
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.csproj.CoreCompileInputs.cache
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.csproj.CopyComplete
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.dll
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\ref\Business_Logic_Layer.dll
+C:\Users\akshetty\Project_Files\PhaseEnd_Projects\Phase4\Laptop_Sell_With_Business_Logic_layer\Laptop_Sell\Business_Logic_Layer\obj\Debug\net5.0\Business_Logic_Layer.pdb
